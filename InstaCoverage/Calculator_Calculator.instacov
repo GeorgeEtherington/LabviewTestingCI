@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<TEST_SUITE ICovVersion="3.3.0">
+
+  <HARNESS_PATH>Calculator_Calculator-harness.vi</HARNESS_PATH>
+
+  <VI_UNDER_TEST_PATH>..\Calculator\Calculator.vi</VI_UNDER_TEST_PATH>
+
+  <SETUP_PATH>Calculator_Calculator-setup.vi</SETUP_PATH>
+
+  <TEARDOWN_PATH>Calculator_Calculator-teardown.vi</TEARDOWN_PATH>
+
+  <TEST_CASES>
+    <TEST_CASE id="Add">
+      <COMMENT>Adding 3 and 4</COMMENT>
+      <REQUIREMENT>Result should be 7</REQUIREMENT>
+    </TEST_CASE>
+  </TEST_CASES>
+
+</TEST_SUITE>
