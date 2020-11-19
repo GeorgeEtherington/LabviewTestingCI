@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="20008000">
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -12,8 +13,16 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Calculator" Type="Folder">
 			<Item Name="Calculator.lvclass" Type="LVClass" URL="../../LabVIEW Data/Calculator/Calculator.lvclass"/>
-			<Item Name="CarayaTest.vi" Type="VI" URL="../Unit Tests/CarayaTest.vi"/>
 		</Item>
+		<Item Name="InstaCoverage unit tests" Type="Folder">
+			<Item Name="Calculator_Calculator" Type="Folder">
+				<Item Name="Calculator_Calculator-setup.vi" Type="VI" URL="../InstaCoverage/Calculator_Calculator-setup.vi"/>
+				<Item Name="Calculator_Calculator-teardown.vi" Type="VI" URL="../InstaCoverage/Calculator_Calculator-teardown.vi"/>
+				<Item Name="Calculator_Calculator-harness.vi" Type="VI" URL="../InstaCoverage/Calculator_Calculator-harness.vi"/>
+				<Item Name="Calculator_Calculator.instacov" Type="Document" URL="../InstaCoverage/Calculator_Calculator.instacov"/>
+			</Item>
+		</Item>
+		<Item Name="CarayaTest.vi" Type="VI" URL="../Unit Tests/CarayaTest.vi"/>
 		<Item Name="CalculatorTestCase.lvclass" Type="LVClass" URL="../Unit Tests/CalculatorTest/CalculatorTestCase.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
@@ -691,6 +700,48 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="myBuildSpec" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{A378C2A4-77BB-49B3-A42F-AC7420C5798A}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{5CA43F83-7AD2-4586-85E1-AE7585EE8483}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{7B147A4C-F269-4E30-8F00-2FA03C5DB1E0}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">myBuildSpec</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/Windows/Temp/Jenkins</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{2A92812C-2224-4706-98A5-3E5DE6F694F1}</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Application.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Windows/Temp/Jenkins/Application.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/Windows/Temp/Jenkins/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{17D8D654-5236-43F1-A22B-D02195D1D8CF}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Calculator/Calculator.lvclass/Calculator.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Control Software Solutions</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">myBuildSpec</Property>
+				<Property Name="TgtF_internalName" Type="Str">myBuildSpec</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2020 Control Software Solutions</Property>
+				<Property Name="TgtF_productName" Type="Str">myBuildSpec</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{04839E97-6524-4532-8185-8C61C3D67659}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Application.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
